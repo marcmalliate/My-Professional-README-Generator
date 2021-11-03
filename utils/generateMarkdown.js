@@ -1,7 +1,7 @@
 // LICENSE BADGE FUNCTION
 
 function renderLicenseBadge(license) {
-  if (license == 'none') {
+  if (license == 'No License') {
     return '';
   }
   else if (license === "MIT") {
@@ -23,7 +23,7 @@ renderLicenseBadge()
 // LICENSE LINK FUNCTION
 
 function renderLicenseLink(license) {
-  if (license == 'none') {
+  if (license == 'No License') {
     return '';
   }
   else if (license === "MIT") {
@@ -43,13 +43,45 @@ renderLicenseLink()
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+//function renderLicenseSection(license) { }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ************************
+
+  ${renderLicenseBadge(data.license)}
+
+  ## *Table of Contents*
+  1.  [Installation](#Installation)
+  2.  [Usage](#Usage)
+  3.  [License](#License)
+  4.  [Contributing](#Contributing)
+  5.  [Tests](#Tests)
+  6.  [Questions](#Questions)
+
+  ## *Installation*
+  ${data.installation}
+
+  ## *Usage*
+  ${data.usage}
+
+  ## *License*
+ This application has the following license:
+ ${renderLicenseLink(data.license)}
+
+  ## *Contributing*
+  ${data.contributing}
+
+  ## *Tests*
+${data.tests}
+
+## *Questions*
+If you would like to know more or have a question you'd like to ask, please contact me via email ${data.email} or you may also like to checkout my work at (https://github.com/${data.username})
+
 `;
 }
+
 
 module.exports = generateMarkdown;

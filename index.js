@@ -31,9 +31,10 @@ const promptUser = () => {
         name: "license",
         message: 'What kind of license should your project have?',
         choices: [
-            "Apache License 2.0",
-            "GNU General Public License v3.0",
-            "MIT License",
+            "MIT",
+            "APACHE 2.0",
+            "GPL v3.0",
+            "No License"
         ]
     },
     {
@@ -48,7 +49,7 @@ const promptUser = () => {
     },
     {
         type: "input",
-        name: "repo",
+        name: "usage",
         message: "What does the user need to know about using the repo?"
     },
     {
@@ -56,7 +57,7 @@ const promptUser = () => {
         name: "contributing",
         message: "What does the user need to know about contributing to the repo?"
     },
-]);
+    ]);
 };
 
 // Function to write README file
@@ -64,9 +65,9 @@ const promptUser = () => {
 const init = () => {
     promptUser()
 
-    .then((data) => fs.writeFileSync('README.md', generateMarkdown(data)))
-    .then(() => console.log("Your professional README.md has been created!"))
-    .catch((err) => console.error(err))
+        .then((data) => fs.writeFileSync('README.md', generateMarkdown(data)))
+        .then(() => console.log("Your professional README.md has been created!"))
+        .catch((err) => console.error(err))
 };
 
 
