@@ -60,7 +60,14 @@ const promptUser = () => {
 };
 
 
-const generateMarkdown = ({ username, email, title, description, license, installation, tests, repo, contributing }) =>
+const init = () => {
+    promptUser()
+
+    .then((data) => fs.writeFileSync('README.md', generateMarkdown(data)))
+    .then(() => console.log("Your professional ReadableStream.me has been created!"))
+    .catch((err) => console.error(err))
+};
+
 
 
 
