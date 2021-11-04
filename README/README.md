@@ -2,9 +2,10 @@
 
   ************************
 
-  ![license: Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-blue)
+  ![license: MIT](https://img.shields.io/badge/license-MIT-blue)
 
   ## Table of Contents
+  0.  [Development Process](#Development)
   1.  [Installation](#Installation)
   2.  [Usage](#Usage)
   3.  [License](#License)
@@ -12,23 +13,28 @@
   5.  [Tests](#Tests)
   6.  [Questions](#Questions)
 
+  ## Development Process
+  This application is designed to 
+
 
 
   ## Installation
-  npm i
+
+  *npm i*
+ 
 
   ## Usage
-  You're good to go!
+  Nothing special, you should be go to go!
 
   ## License
  This application has the following license:
- [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
+ [MIT License](https://opensource.org/licenses/MIT)
 
   ## Contributing
-  Please email me
+  Please email me to discuss further.
 
   ## Tests
-npm run test
+*npm run test*
 
 <br />
 
