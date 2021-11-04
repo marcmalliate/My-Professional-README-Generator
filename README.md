@@ -12,9 +12,7 @@
   5.  [Tests](#Tests)
   6.  [Questions](#Questions)
 
-    ************************
 
-    <br />
 
   ## Installation
   npm i
